@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+}
+
+group 'Aven.Toxic'
+version '1.0'
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'Aven.Toxic.Main'
+        )
+    }
+}
+build.dependsOn(jar)
